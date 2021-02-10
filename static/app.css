@@ -1,0 +1,94 @@
+body{
+    background-image: url(https://cdn.hipwallpaper.com/i/60/69/jJd6eP.jpg);
+}
+
+h1{
+    text-align: center;
+    margin-top: 6rem;
+    font-size: 100px;
+    color: aqua;
+}
+form{
+    margin-top: 15rem;
+    margin: 4rem;
+    /* display: inline-block; */
+}
+
+input, label{
+    margin-left: 43%;
+    display: block;
+    padding: 8px;
+}
+
+label{
+    color: white;
+}
+button{
+    margin-top: 10%;
+    margin: 5rem;
+    margin-left: 42%;
+    font-size: larger;
+    font-weight: bolder;
+    padding: 15px;
+    width: 200px;
+    border: red solid 3px;
+    color: white;
+    background-color: blue;
+    border-radius: 5px;
+    cursor: pointer;
+}
+section{
+    margin: 2rem;
+    margin-left: 38%;
+}
+td{
+    width: 80px;
+    height: 80px;
+    font-size: 40px;
+    color: violet;
+    background-color: wheat;
+    border: black solid 2px;
+    align-content: center;
+    text-align: center;
+}
+.headers{
+    margin-left: 38%;
+    display: inline-flex;
+    font-size: 20px;
+}
+.heads{
+    margin-left: 5px;
+    color: lightgreen;
+    font-size: 21px;
+}
+#headers2{
+    margin-left: 11%;
+}
+.guess{
+    margin: 1rem;
+    display: inline-flex;
+}
+#guessInp{
+    margin-left: 37%;
+    width: 200px;
+}
+#guessBtn{
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+    height: 10px;
+    width: 175px;
+}
+#guessBtn:hover{
+    background-color: white;
+    color: blue;
+}
+.messages{
+    display: none;
+}
+.success{
+    color: green;
+}
+.error{
+    color: red;
+}

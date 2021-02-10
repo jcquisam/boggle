@@ -1,0 +1,37 @@
+{%extends 'base.html'%}
+
+{%block tittle%} Board{%endblock%}
+{%block content%}
+
+<label class="headers">Player: <div class="heads">{{session['user']}}</div></label>
+<label class="headers" id="headers2">Score: <div class="heads">{{score}}</div></label>
+<form action="">
+        <input class="guess" id="guessInp" type="text", placeholder="Your Guess" name='guess'>
+        <button class="guess" id="guessBtn">Check!!</button>
+</form>
+<!-- {% with messages = get_flashed_messages(with_categories=true)%} 
+{% if messages %} 
+<section class="messages"> 
+{% for category,msg in messages%} 
+<p class="{{category}}"> {{msg}}</p> 
+{%endfor%} 
+</section> 
+{% endif %} 
+{% endwith%}  -->
+<section class="messages"> 
+<p> Message here :</p> 
+</section> 
+<section>
+<div id="game">
+    <table id="board">
+        {% for row in session['board']%}
+        <tr>
+            {% for cell in row%}
+            <td>{{cell}}</td>
+            {%endfor%}
+        </tr>
+        {%endfor%}
+    </table>
+</div>
+</section>
+{%endblock%}
